@@ -26,12 +26,11 @@ public OnBanClient(client,
 {
 	if ((flags & BANFLAG_IP|BANFLAG_AUTHID) == BANFLAGIP|BANFLAG_AUTHID)
 		return Plugin_Continue;
-	else if (flags & BANFLAG_IP)
+	if (flags & BANFLAG_IP)
 	{
 		
-		
 	}
-	else if (flags & BANFLAG_AUTHID)
+	if (flags & BANFLAG_AUTHID)
 	{
 		
 		
