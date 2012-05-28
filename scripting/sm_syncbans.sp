@@ -1,6 +1,11 @@
 #include <sourcemod>
+#undef REQUIRE_PLUGIN
+#include <updater>
+#define REQUIRE_PLUGIN
 
-#define PLUGIN_VERSION "1.0"
+#define PLUGIN_VERSION "1.0.0"
+
+#define UPDATER_URL "https://raw.github.com/minimoney1/SM-BanIP/master/"
 
 public Plugin:myinfo = 
 {
@@ -32,7 +37,6 @@ public OnBanClient(client,
 	}
 	if (flags & BANFLAG_AUTHID)
 	{
-		
 		
 	}
 	return Plugin_Continue;
